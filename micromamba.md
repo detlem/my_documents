@@ -370,4 +370,15 @@ micromamba config list
 
 ---
 
+### トラブルシューティング
 
+```
+critical libmamba Shell not initialized
+```
+* シェルを設定する
+  ```
+  micromamba shell init --shell bash --root-prefix=~/micromamba
+  source ~/.bashrc
+  ```
+  * --root-prefixはenvs/が保存される場所
+  * `micromamba env list`で確認できる
